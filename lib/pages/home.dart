@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
           children: [
-            Image.asset('gato.webp'),
+            Image.asset('assets/logo.png'),
             Padding(
               padding: const EdgeInsets.all(32.0),
               child: Text('Gato con botas'),
@@ -31,6 +31,17 @@ class _HomePageState extends State<HomePage> {
               ),
                 onPressed: () {},
                 child: Text('Presioname'),
+            ),
+            const SizedBox(height: 16.0),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                border: Border.all(
+                  width: 8,
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text('Texto Decorado'),
             )
           ]
       )
